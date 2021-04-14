@@ -1,0 +1,25 @@
+.Selected-ServiceNavBtn{
+    border: .2rem solid #004E99;
+    border-radius: .9rem;
+    text-align: center;
+    width: 17rem;
+    margin-bottom: .2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.Selected-bus{
+    color: #B61E8D;
+}
+
+.ServiceNavBtn{
+    border: .2rem solid #0692B2;
+    border-radius: .9rem;
+    text-align: center;
+    width: 17rem;
+    margin-bottom: .2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.Unselected-bus{
+    color: white
+}

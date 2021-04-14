@@ -1,0 +1,15 @@
+<div class="row Text-color">
+    <div class="col-1">
+        <i class="fas {{Icon}}" (click)="clickme()" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"></i>
+    </div>
+    <div class="col-10 text-start ">
+        {{Title}}
+    </div>
+    <div class="col-10 offset-1 ">
+        <div class="" #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+                {{Body}}
+          </div>
+    </div>
+</div>
+<hr>
