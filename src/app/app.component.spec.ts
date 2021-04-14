@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'SJRTD'`, () => {
+  it(`should have as title 'WebRTD'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('SJRTD');
+    expect(app.title).toEqual('WebRTD');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('SJRTD app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('WebRTD app is running!');
   });
 });
