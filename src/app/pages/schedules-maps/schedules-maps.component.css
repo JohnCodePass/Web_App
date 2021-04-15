@@ -1,0 +1,29 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+div.circle {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border: solid 5px grey;
+    width: 30px;
+    height: 30px;
+}
+.routeLine {
+    border-left: 3px solid grey;
+    height: 30px;
+    /* Needed to center the under the open bubble */
+    margin-left: 0.87rem;
+}
+.stepMins {
+    color:  grey;
+    border: solid 2px grey;
+}
