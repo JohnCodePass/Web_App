@@ -8,6 +8,9 @@ import { SchedulesMapsComponent } from './pages/schedules-maps/schedules-maps.co
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ServiceNavBtnComponent } from './Components/ServiceParts/service-nav-btn/service-nav-btn.component';
+import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop-down/service-drop-down.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     AboutComponent,
     SchedulesMapsComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    ServiceNavBtnComponent,
+    ServiceDropDownComponent
   ],
   imports: [
     BrowserModule,

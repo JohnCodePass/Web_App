@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from 'src/app/services/localstorage/local-storage.service';
 
 @Component({
   selector: 'app-services-page',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServicesPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private lsService: LocalStorageService) { }
 
   ngOnInit(): void {
   }
