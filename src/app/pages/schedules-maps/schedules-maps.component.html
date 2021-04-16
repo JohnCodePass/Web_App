@@ -19,10 +19,10 @@
                               Start
                           </div>
                           <div class="col-8">
-                              <input >
+                              <input #origin >
                           </div>
                           <div class="col-2">
-                            <i class="far fa-star"></i>
+                            <i class="far fa-star" (click)="AddFav(origin.value)"></i>
                           </div>
                       </div>
                       <!-- Start Favorites Dropdown -->
@@ -31,9 +31,7 @@
                           <div ngbDropdown class="d-inline-block">
                             <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
                             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                              <button ngbDropdownItem>Action - 1</button>
-                              <button ngbDropdownItem>Another Action</button>
-                              <button ngbDropdownItem>Something else is here</button>
+                              <button #{{i}} *ngFor="let item of FavoritesArray; index as i" (click)="FillInput(origin,item)"  ngbDropdownItem><i class="far fa-star" (click)="RemoveFav(i)"></i>{{item}}</button>
                             </div>
                           </div>
                         </div>
@@ -44,10 +42,10 @@
                             Destination
                         </div>
                         <div class="col-8">
-                            <input >
+                            <input #destination >
                         </div>
                         <div class="col-2">
-                          <i class="far fa-star"></i>
+                          <i class="far fa-star" (click)="AddFav(origin.value)"></i>
                         </div>
                         <!-- Destination Favorites Dropdown -->
                       <div class="row">
@@ -55,9 +53,7 @@
                           <div ngbDropdown class="d-inline-block">
                             <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
                             <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                              <button ngbDropdownItem>Action - 1</button>
-                              <button ngbDropdownItem>Another Action</button>
-                              <button ngbDropdownItem>Something else is here</button>
+                                <button #{{i}} *ngFor="let item of FavoritesArray; index as i" (click)="FillInput(origin,item)"  ngbDropdownItem><i class="far fa-star" (click)="RemoveFav(i)"></i>{{item}}</button>
                             </div>
                           </div>
                         </div>

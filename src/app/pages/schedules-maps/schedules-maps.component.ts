@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from 'src/app/services/localstorage/local-storage.service';
 
 @Component({
   selector: 'app-schedules-maps',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SchedulesMapsComponent implements OnInit {
-
+  FavoritesArray = this.lsService.GetValue();
   // initMap(): void {
   //   // The location of Uluru
   //   const uluru = { lat: -25.344, lng: 131.036 };
@@ -26,11 +27,26 @@ export class SchedulesMapsComponent implements OnInit {
   //     map: map,
   //   });
   // }
-  constructor() { }
+  constructor(private lsService: LocalStorageService) { }
 
   ngOnInit(): void {
   }
-
+  AddFav(value){
+    if(value !== "" && !this.FavoritesArray.includes(value)){
+      console.log(value+" has been added")
+      this.lsService.AddValue(value);
+    }else{
+      console.log("Can't do that")
+    }
+  }
   
+  RemoveFav(index){
+    this.lsService.Remove(index)
+  }
 
+
+ FillInput(Input,value){
+   console.log(value)
+  Input.value = value;
+ }
 }
