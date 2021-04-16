@@ -6,10 +6,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SchedulesMapsComponent } from './pages/schedules-maps/schedules-maps.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServiceNavBtnComponent } from './Components/ServiceParts/service-nav-btn/service-nav-btn.component';
 import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop-down/service-drop-down.component';
-
 
 
 @NgModule({
@@ -25,6 +25,7 @@ import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GoogleMapsModule,
     NgbModule
   ],
   providers: [],

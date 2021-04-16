@@ -1,1 +1,105 @@
-<p>schedules-maps works!</p>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-6 d-flex justify-content-center">
+            <google-map></google-map>
+        </div>
+        <div class="col-6">
+            
+            <ul ngbNav #nav="ngbNav" class="nav-tabs">
+                <li ngbNavItem>
+                    <!-- Where are you going? -->
+                  <a ngbNavLink>Where are you going?</a>
+                  <ng-template ngbNavContent>
+                      <div class="row">
+                        <h3>Where are you going?</h3>
+                      </div>
+                      <!-- Start Point -->
+                      <div class="row">
+                          <div class="col-2 d-flex justify-content-end">
+                              Start
+                          </div>
+                          <div class="col-8">
+                              <input #origin >
+                          </div>
+                          <div class="col-2">
+                            <i class="far fa-star" (click)="AddFav(origin.value)"></i>
+                          </div>
+                      </div>
+                      <!-- Start Favorites Dropdown -->
+                      <div class="row">
+                        <div class="col">
+                          <div ngbDropdown class="d-inline-block">
+                            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                              <button #{{i}} *ngFor="let item of FavoritesArray; index as i" (click)="FillInput(origin,item)"  ngbDropdownItem><i class="far fa-star" (click)="RemoveFav(i)"></i>{{item}}</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Destination Point -->
+                      <div class="row pt-5">
+                        <div class="col-2">
+                            Destination
+                        </div>
+                        <div class="col-8">
+                            <input #destination >
+                        </div>
+                        <div class="col-2">
+                          <i class="far fa-star" (click)="AddFav(origin.value)"></i>
+                        </div>
+                        <!-- Destination Favorites Dropdown -->
+                      <div class="row">
+                        <div class="col">
+                          <div ngbDropdown class="d-inline-block">
+                            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button #{{i}} *ngFor="let item of FavoritesArray; index as i" (click)="FillInput(origin,item)"  ngbDropdownItem><i class="far fa-star" (click)="RemoveFav(i)"></i>{{item}}</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </ng-template>
+                </li>
+                <li ngbNavItem>
+                    <!-- Route Details -->
+                  <a ngbNavLink>Route Details</a>
+                  <ng-template ngbNavContent>
+                    
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="col-10"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="routeLine"></div>
+
+                      </div>
+                      <div class="col-10"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-2">
+                        <p class="stepMins">5 min</p>
+                      </div>
+                      <div class="col-10"></div>
+                    </div>
+                  </ng-template>
+                </li>
+              </ul>
+              <div [ngbNavOutlet]="nav"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
