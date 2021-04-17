@@ -13,6 +13,7 @@ import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop
 import { VanGoComponent } from './components/ServiceParts/van-go/van-go.component';
 import { DialARideComponent } from './components/ServiceParts/dial-a-ride/dial-a-ride.component';
 import { CommuterComponent } from './components/ServiceParts/commuter/commuter.component';
+import { CommuterCardComponent } from './components/ServiceParts/commuter-card/commuter-card.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CommuterComponent } from './components/ServiceParts/commuter/commuter.c
     ServiceDropDownComponent,
     VanGoComponent,
     DialARideComponent,
-    CommuterComponent
+    CommuterComponent,
+    CommuterCardComponent
   ],
   imports: [
     BrowserModule,
