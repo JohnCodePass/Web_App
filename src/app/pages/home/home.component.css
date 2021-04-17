@@ -1,20 +1,20 @@
 .homeSchedulesBG{
 background-image: url("../../../assets/images/SchedulesBG.png");
 height:auto; 
-min-height:100vh; 
+min-height: 93vh; 
 background-size:cover; 
 background-position:center; 
-border: solid white 10px;
+
 }
 
 .homeServicesBG{
 background-image: url("../../../assets/images/ServicesBG.png");
-border: solid white 10px;
+
 }
 
 .homeAboutBG{
 background-image: url("../../../assets/images/InfoBG.png");
-border: solid white 10px;
+
 }
 
 .homeLogo{
@@ -32,7 +32,7 @@ border: solid white 10px;
    display: flex;
    text-align: center;
    color:white;
-   font-size: 60px;
+   font-size: 53px;
    font-weight: bold;
 }
 
@@ -48,8 +48,3 @@ border: solid white 10px;
     opacity:60%;
 }
 
-body{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
