@@ -2,28 +2,113 @@
     height: 400px;
     width: 100%;
 }
-
+.detailsBorder {
+    border-radius: 4px;
+    border: solid 2px black;
+    box-shadow: 4px 4px #72727293;
+}
 .center {
     display: flex;
     justify-content: center;
 }
-
-
+.dBlue {
+    color: #004E99;
+}
+.lBlue {
+    color: #0692B2;
+}
+.pink {
+    color: #B61E8D;
+}
+/* #B61E8D
+#004E99
+#0692B2 */
+/* Start to bottom of a stop */
 div.circle {
     -moz-border-radius: 50px/50px;
     -webkit-border-radius: 50px 50px;
     border-radius: 50px/50px;
-    border: solid 5px grey;
+    border: solid 4px grey;
     width: 30px;
     height: 30px;
 }
-.routeLine {
-    border-left: 3px solid grey;
-    height: 30px;
-    /* Needed to center the under the open bubble */
-    margin-left: 0.87rem;
+.topVertLine {
+    margin-top: -10px;
 }
-.stepMins {
+.topRouteLine {
+    border-left: 3px solid grey;
+    height: 20px;
+}
+.botVertLine {
+    margin-top: -16px;
+}
+.botRouteLine {
+    border-left: 3px solid grey;
+    height: 20px;
+}
+.minsTilNextStop {
     color:  grey;
     border: solid 2px grey;
+    border-radius: 10px;
+    width: 5rem;
+}
+/* Same as above, just changing colors. */
+/* Will probably change with better TS later on? */
+div.circleX {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border: solid 4px red;
+    width: 30px;
+    height: 30px;
+}
+.topVertLineX {
+    margin-top: -18px;
+}
+.topRouteLineX {
+    border-left: 3px solid red;
+    height: 20px;
+}
+.botVertLineX {
+    margin-top: -16px;
+}
+.botRouteLineX{
+    border-left: 3px solid red;
+    height: 20px;
+}
+.minsTilNextStopX {
+    color:  red;
+    border: solid 2px red;
+    border-radius: 10px;
+    width: 5rem;
+}
+/* Same as above, just changing colors. */
+/* Will probably change with better TS later on? */
+div.circleY {
+    -moz-border-radius: 50px/50px;
+    -webkit-border-radius: 50px 50px;
+    border-radius: 50px/50px;
+    border: solid 4px blue;
+    width: 30px;
+    height: 30px;
+}
+.topVertLineY {
+    margin-top: -18px;
+}
+.topRouteLineY {
+    border-left: 3px solid blue;
+    height: 20px;
+}
+.botVertLineY {
+    margin-top: -16px;
+}
+.botRouteLineY{
+    border-left: 3px solid blue;
+    height: 20px;
+}
+.minsTilNextStopY {
+    color:  blue;
+    border: solid 2px blue;
+    border-radius: 10px;
+    width: 5rem;
 }

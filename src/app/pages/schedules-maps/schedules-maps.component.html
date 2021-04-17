@@ -3,14 +3,14 @@
         <div class="col-6 d-flex justify-content-center">
             <google-map></google-map>
         </div>
-        <div class="col-6">
+        <div class="col-6 detailsBorder">
             
             <ul ngbNav #nav="ngbNav" class="nav-tabs">
                 <li ngbNavItem>
                     <!-- Where are you going? -->
                   <a ngbNavLink>Where are you going?</a>
                   <ng-template ngbNavContent>
-                      <div class="row">
+                      <div class="row center">
                         <h3>Where are you going?</h3>
                       </div>
                       <!-- Start Point -->
@@ -69,27 +69,155 @@
                     <!-- Route Details -->
                   <a ngbNavLink>Route Details</a>
                   <ng-template ngbNavContent>
-                    
+                    <div class="row center">
+                      <h3 class="dBlue">Route Details</h3>
+                    </div>
+                    <!-- Start to bottom of start -->
                     <div class="row">
-                      <div class="col-2">
+                      <div class="col-3 center">
                         <div class="circle"></div>
                       </div>
-                      <div class="col-10"></div>
+                      <div class="col-6">
+                        <b class="dBlue">Start point placeholder</b>
+                        <p></p>
+                      </div>
+                    </div>
+
+                    <div class="row topVertLine">
+                      <div class="col-3 center">
+                        <div class="topRouteLine"></div>
+                      </div>
+                      <div class="col-9"></div>
                     </div>
 
                     <div class="row">
-                      <div class="col-2">
-                        <div class="routeLine"></div>
-
+                      <div class="col-3 center">
+                        <p class="minsTilNextStop center">5 min</p>
                       </div>
-                      <div class="col-10"></div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row botVertLine">
+                      <div class="col-3 center">
+                        <div class="botRouteLine"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <!-- Start to bottom of a 1st stop -->
+                    <div class="row">
+                      <div class="col-3 center">
+                        <div class="circleX"></div>
+                      </div>
+                      <div class="col-6 column">
+                        <b class="mb-0 dBlue">First stop information</b>
+                        <p class="mb-0">Next in 17 min, 25 min</p>
+                      </div>
+                      <div class="col-3 center">
+                        <b class="lBlue">5 min</b>
+                      </div>
+                    </div>
+
+                    <div class="row topVertLineX">
+                      <div class="col-3 center">
+                        <div class="topRouteLineX"></div>
+                      </div>
+                      <div class="col-9"></div>
                     </div>
 
                     <div class="row">
-                      <div class="col-2">
-                        <p class="stepMins">5 min</p>
+                      <div class="col-3 center">
+                        <p class="minsTilNextStopX center">5 min</p>
                       </div>
-                      <div class="col-10"></div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row botVertLineX">
+                      <div class="col-3 center">
+                        <div class="botRouteLineX"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <!-- Start to bottom of a 2nd stop -->
+                    <div class="row">
+                      <div class="col-3 center">
+                        <div class="circleY"></div>
+                      </div>
+                      <div class="col-6 column">
+                        <b class="mb-0 dBlue">First stop information</b>
+                        <p class="mb-0">Next in 17 min, 25 min</p>
+                      </div>
+                      <div class="col-3 center">
+                        <b class="pink">15 min</b>
+                      </div>
+                    </div>
+
+                    <div class="row topVertLineY">
+                      <div class="col-3 center">
+                        <div class="topRouteLineY"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-3 center">
+                        <p class="minsTilNextStopY center">5 min</p>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row botVertLineY">
+                      <div class="col-3 center">
+                        <div class="botRouteLineY"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <!-- Start to bottom of a 3rd stop -->
+                    <div class="row">
+                      <div class="col-3 center">
+                        <div class="circleX"></div>
+                      </div>
+                      <div class="col-6 column">
+                        <b class="mb-0 dBlue">First stop information</b>
+                        <p class="mb-0">Next in 17 min, 25 min</p>
+                      </div>
+                      <div class="col-3 center">
+                        <b class="lBlue">10 min</b>
+                      </div>
+                    </div>
+
+                    <div class="row topVertLineX">
+                      <div class="col-3 center">
+                        <div class="topRouteLineX"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-3 center">
+                        <p class="minsTilNextStopX center">5 min</p>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <div class="row botVertLineX">
+                      <div class="col-3 center">
+                        <div class="botRouteLineX"></div>
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
+                    <!-- Destination Point -->
+                    <div class="row">
+                      <div class="col-3 center">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="col-9">
+                        <b class="dBlue">You have reached your destination!</b>
+                        <p></p>
+                      </div>
                     </div>
                   </ng-template>
                 </li>
@@ -98,12 +226,3 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
