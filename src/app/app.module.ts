@@ -10,6 +10,9 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ServiceNavBtnComponent } from './Components/ServiceParts/service-nav-btn/service-nav-btn.component';
 import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop-down/service-drop-down.component';
+import { VanGoComponent } from './components/ServiceParts/van-go/van-go.component';
+import { DialARideComponent } from './components/ServiceParts/dial-a-ride/dial-a-ride.component';
+import { CommuterComponent } from './components/ServiceParts/commuter/commuter.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { ServiceDropDownComponent } from './Components/ServiceParts/service-drop
     SchedulesMapsComponent,
     ServicesPageComponent,
     ServiceNavBtnComponent,
-    ServiceDropDownComponent
+    ServiceDropDownComponent,
+    VanGoComponent,
+    DialARideComponent,
+    CommuterComponent
   ],
   imports: [
     BrowserModule,
