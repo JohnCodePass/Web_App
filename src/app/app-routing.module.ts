@@ -7,7 +7,7 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
 
 const routes: Routes = [
   {path: 'About', component :AboutComponent},
-  {path: 'Schdules&Maps', component :SchedulesMapsComponent},
+  {path: 'Schedules&Maps', component :SchedulesMapsComponent},
   {path: 'service-page', component :ServicesPageComponent},
   {path: '**', component :HomeComponent},
 ];
