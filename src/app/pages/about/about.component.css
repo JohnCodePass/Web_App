@@ -1,0 +1,20 @@
+.vertLine{
+    border-right: solid 3px #0692B2;
+    height:auto;
+}
+.alignLeft{
+    margin: 0;
+}
+.marginLeft{
+    margin-left: 8.25%;
+}
+.removeMargin{
+    margin-top: -100px;
+}
+.removeMargin2{
+    margin-top: -175px;
+}
+p{
+    margin:0;
+    padding:0;
+}
