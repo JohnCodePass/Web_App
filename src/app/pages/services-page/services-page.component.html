@@ -1,40 +1,48 @@
 <div class="container-fluid mt-5">
     <div class="row">
         <div class="col-4 ml-5">
-            <app-service-nav-btn busName="BTR Express" Selected="true"></app-service-nav-btn>
-            <app-service-nav-btn busName="Local" Selected="false"></app-service-nav-btn>
-            <app-service-nav-btn busName="Hooper" Selected="false"></app-service-nav-btn>
-            <app-service-nav-btn busName="Commuter" Selected="false"></app-service-nav-btn>
-            <app-service-nav-btn busName="Van-Go!" Selected="false"></app-service-nav-btn>
-            <app-service-nav-btn busName="Dial-A-Ride" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(1)" busName="BTR Express" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(2)" busName="Local" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(3)" busName="Hooper" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(4)" busName="Commuter" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(5)" busName="Van-Go!" Selected="false"></app-service-nav-btn>
+            <app-service-nav-btn (click)="SelectArticle(6)" busName="Dial-A-Ride" Selected="false"></app-service-nav-btn>
 
 
         </div>
         <div class="col-7">
-            <h1 style="color: #B61E8D; font-size: 50px;">BRT Express</h1>
-            <!--Bus Info goes Here-->
-            <p style="color:#004E99; font-size: 25px;">Fast and frequent service within the Stockton Metropolitan Area
-                (SMA)</p>
-            <!-- <app-service-drop-down style="font-size: 25px;" Title="Fast and frequent service within the Stockton Metropolitan Area (SMA)" Body="sdsadfasdsdfsd sd fsd asdfka jsdkf ksldfksd fksdfk sdf sdj flks dklfjslkdf lkasd fkl sdfasdf"></app-service-drop-down> -->
-            <img src="../../../assets/Images/BTR Express.png" style="max-width: 100%;" alt="BTR Bus">
-            <p class="mt-5" style="color:#004E99; font-size: 25px;">RTD launched its first Bus Rapid Transit (BRT)
-                Express Corridor in 2007, which has experienced extraordinary growth in ridership. Since then, RTD has
-                launched four more BRT routes to accommodate our customers’ demand for this high-quality service
-                throughout the system, with Midtown Corridor and MLK Corridor in 2018 as the most recent additions. Over
-                six miles each, these BRT Express routes are key corridors and critical components to building a better
-                transportation system for the city of Stockton.</p>
-            <p class="mt-5" style="color: #B61E8D; font-size: 45px;">What is BRT Express?</p> 
-            <p style="color:#004E99; font-size: 25px;">BRT Express, a high-quality Bus Rapid Transit service, operates with fewer stops, off-board fare
-                collection, and more frequent trips than regular bus service to make it fast, reliable, and
-                convenient. To meet the demand for its most popular service, RTD also employs higher-capacity
-                hybrid articulated buses.</p>  
-                <ul style="color:#004E99; font-size: 25px;">
-                  <li>Hybrid and all-electric buses</li>  
-                  <li>Frequent service with limited stops</li> 
-                  <li>Improved shelters and boarding areas for passenger comfort and convenience</li> 
-                  <li>Pre-paid fares from Fare Vending Machines for faster passenger boarding</li> 
-                  <li>Seamless BRT Express connections at all RTD major transfer locations</li> 
-                </ul> 
+           <span *ngIf="ArticleNum === 1">
+                <h1 style="color: #B61E8D; font-size: 50px;">BRT Express</h1>
+                <!--Bus Info goes Here-->
+                <p style="color:#004E99; font-size: 25px;">Fast and frequent service within the Stockton Metropolitan Area
+                    (SMA)</p>
+                <!-- <app-service-drop-down style="font-size: 25px;" Title="Fast and frequent service within the Stockton Metropolitan Area (SMA)" Body="sdsadfasdsdfsd sd fsd asdfka jsdkf ksldfksd fksdfk sdf sdj flks dklfjslkdf lkasd fkl sdfasdf"></app-service-drop-down> -->
+                <img src="../../../assets/Images/BTR Express.png" style="max-width: 100%;" alt="BTR Bus">
+                <p class="mt-5" style="color:#004E99; font-size: 25px;">RTD launched its first Bus Rapid Transit (BRT)
+                    Express Corridor in 2007, which has experienced extraordinary growth in ridership. Since then, RTD has
+                    launched four more BRT routes to accommodate our customers’ demand for this high-quality service
+                    throughout the system, with Midtown Corridor and MLK Corridor in 2018 as the most recent additions. Over
+                    six miles each, these BRT Express routes are key corridors and critical components to building a better
+                    transportation system for the city of Stockton.</p>
+                <p class="mt-5" style="color: #B61E8D; font-size: 45px;">What is BRT Express?</p> 
+                <p style="color:#004E99; font-size: 25px;">BRT Express, a high-quality Bus Rapid Transit service, operates with fewer stops, off-board fare
+                    collection, and more frequent trips than regular bus service to make it fast, reliable, and
+                    convenient. To meet the demand for its most popular service, RTD also employs higher-capacity
+                    hybrid articulated buses.</p>  
+                    <ul style="color:#004E99; font-size: 25px;">
+                      <li>Hybrid and all-electric buses</li>  
+                      <li>Frequent service with limited stops</li> 
+                      <li>Improved shelters and boarding areas for passenger comfort and convenience</li> 
+                      <li>Pre-paid fares from Fare Vending Machines for faster passenger boarding</li> 
+                      <li>Seamless BRT Express connections at all RTD major transfer locations</li> 
+                    </ul> 
+           </span>
+           <app-local *ngIf="ArticleNum === 2"></app-local>
+           <app-hopper *ngIf="ArticleNum === 3"></app-hopper>
+
+           <app-commuter *ngIf="ArticleNum === 4"></app-commuter>
+           <app-van-go *ngIf="ArticleNum === 5"></app-van-go>
+           <app-dial-a-ride *ngIf="ArticleNum === 6"></app-dial-a-ride>
         </div>
     </div>
 </div>
