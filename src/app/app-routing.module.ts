@@ -6,10 +6,10 @@ import { SchedulesMapsComponent } from './pages/schedules-maps/schedules-maps.co
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 const routes: Routes = [
-  {path: '**', component :HomeComponent},
   {path: 'About', component :AboutComponent},
   {path: 'Schdules&Maps', component :SchedulesMapsComponent},
   {path: 'service-page', component :ServicesPageComponent},
+  {path: '**', component :HomeComponent},
 ];
 
 @NgModule({
