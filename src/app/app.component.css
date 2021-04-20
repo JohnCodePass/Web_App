@@ -9,9 +9,13 @@
 .navLinks{
     margin-left:40px;
     font-size:22px;
+    color: black !important;
 }
 .navLinks:hover{
     opacity: 80%;
     text-decoration: underline;
-    color: #004E99;
+    
+}
+.active{
+    color:#004E99 !important;
 }
