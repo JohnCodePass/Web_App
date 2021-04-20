@@ -14,6 +14,8 @@ import { VanGoComponent } from './components/ServiceParts/van-go/van-go.componen
 import { DialARideComponent } from './components/ServiceParts/dial-a-ride/dial-a-ride.component';
 import { CommuterComponent } from './components/ServiceParts/commuter/commuter.component';
 import { CommuterCardComponent } from './components/ServiceParts/commuter-card/commuter-card.component';
+import { LocalComponent } from './Components/ServiceParts/local/local.component';
+import { HopperComponent } from './Components/ServiceParts/hopper/hopper.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { CommuterCardComponent } from './components/ServiceParts/commuter-card/c
     VanGoComponent,
     DialARideComponent,
     CommuterComponent,
-    CommuterCardComponent
+    CommuterCardComponent,
+    LocalComponent,
+    HopperComponent
   ],
   imports: [
     BrowserModule,
